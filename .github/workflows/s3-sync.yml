@@ -22,3 +22,7 @@ jobs:
       - name: Upload files to S3
         run: |
           aws s3 sync ./local-folder s3://loan-default-model-bucket
+
+      - name: Check files
+        run: |
+          ls -R
